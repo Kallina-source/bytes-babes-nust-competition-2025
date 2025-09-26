@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients - Doctor Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h3>MESMTF Portal</h3></div>
+            <nav class="sidebar-nav">
+                <a href="Dashboard.html" class="nav-link">Dashboard</a>
+                <a href="Appointments.html" class="nav-link">Appointments</a>
+                <a href="Patients.html" class="nav-link active">Patients</a>
+                <a href="Diagnosis.html" class="nav-link">Diagnosis</a>
+                <a href="Prescriptions.html" class="nav-link">Prescriptions</a>
+                <a href="Reports.html" class="nav-link">Reports</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="navbar">
+                <div class="nav-left"><button class="menu-toggle" id="menu-toggle">&#9776;</button><h2>Patients</h2></div>
+                <div class="nav-right"><div class="profile">Dr. John Smith</div><a href="index.html" class="logout-btn">Logout</a></div>
+            </header>
+            <div class="content-wrapper">
+                <div class="card">
+                    <div class="table-header">
+                        <h3>Patient Records</h3>
+                        <input type="text" class="search-bar" placeholder="Search by ID, Name...">
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr><th>Patient ID</th><th>Name</th><th>Age</th><th>Gender</th><th>Last Visit</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="patient-row"><td>P001</td><td>Tuupoo Ndishishi</td><td>20</td><td>Female</td><td>15 Sep 2025</td></tr>
+                                <tr class="patient-row"><td>P002</td><td>Tangi Ashipala</td><td>21</td><td>Male</td><td>18 Sep 2025</td></tr>
+                                <tr class="patient-row"><td>P003</td><td>Maria Shaanika</td><td>34</td><td>Female</td><td>22 Sep 2025</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Patient Profile Modal -->
+    <div id="patient-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Patient Profile</h3>
+            <div id="patient-details">
+                <!-- Details will be injected by JS -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="chatbot">...</div>
+    <script src="js/script.js"></script>
+</body>
+</html>

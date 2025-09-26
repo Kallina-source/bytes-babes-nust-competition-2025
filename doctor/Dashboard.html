@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Doctor Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>MESMTF Portal</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="Dashboard.html" class="nav-link active">Dashboard</a>
+                <a href="Appointments.html" class="nav-link">Appointments</a>
+                <a href="Patients.html" class="nav-link">Patients</a>
+                <a href="Diagnosis.html" class="nav-link">Diagnosis</a>
+                <a href="Prescriptions.html" class="nav-link">Prescriptions</a>
+                <a href="Reports.html" class="nav-link">Reports</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navbar -->
+            <header class="navbar">
+                <div class="nav-left">
+                    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="nav-right">
+                    <div class="profile">Dr. John Smith</div>
+                    <a href="index.html" class="logout-btn">Logout</a>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <!-- Welcome Banner -->
+                <div class="welcome-banner card">
+                    <h1>Hello Dr. John Smith!</h1>
+                    <p>Here's a summary of your activities for today, September 23, 2025.</p>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="stats-container">
+                    <div class="stat-card card">
+                        <h4>Upcoming Appointments</h4>
+                        <p>5 <span class="stat-label">today</span></p>
+                    </div>
+                    <div class="stat-card card">
+                        <h4>Patients Consulted</h4>
+                        <p>18 <span class="stat-label">this week</span></p>
+                    </div>
+                    <div class="stat-card card">
+                        <h4>Pending Prescriptions</h4>
+                        <p>3 <span class="stat-label">to action</span></p>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="activity-container card">
+                    <h3>Recent Activity</h3>
+                    <ul class="activity-list">
+                        <li><span>Prescribed Coartem (20mg) to Tuupoo Ndishishi</span><span class="activity-time">10 min ago</span></li>
+                        <li><span>Completed appointment with Tangi Ashipala</span><span class="activity-time">45 min ago</span></li>
+                        <li><span>Viewed medical records for Maria Shaanika</span><span class="activity-time">1 hour ago</span></li>
+                        <li><span>Saved new diagnosis for John Petrus</span><span class="activity-time">3 hours ago</span></li>
+                        <li><span>Canceled appointment for David Iyambo</span><span class="activity-time">5 hours ago</span></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot">
+        <button class="chatbot-toggle">Chat</button>
+        <div class="chatbot-window">
+            <div class="chatbot-header">AI Assistant</div>
+            <div class="chatbot-messages">
+                <div class="message bot">Hello Dr. Smith. How can I assist you?</div>
+            </div>
+            <div class="chatbot-input-area">
+                <div class="typing-indicator"><span></span><span></span><span></span></div>
+                <textarea class="chatbot-input" placeholder="Ask a question..." rows="1"></textarea>
+                <button class="chatbot-send">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

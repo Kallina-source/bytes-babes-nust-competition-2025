@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis - Doctor Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h3>MESMTF Portal</h3></div>
+            <nav class="sidebar-nav">
+                <a href="Dashboard.html" class="nav-link">Dashboard</a>
+                <a href="Appointments.html" class="nav-link">Appointments</a>
+                <a href="Patients.html" class="nav-link">Patients</a>
+                <a href="Diagnosis.html" class="nav-link active">Diagnosis</a>
+                <a href="Prescriptions.html" class="nav-link">Prescriptions</a>
+                <a href="Reports.html" class="nav-link">Reports</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="navbar">
+                <div class="nav-left"><button class="menu-toggle" id="menu-toggle">&#9776;</button><h2>Diagnosis</h2></div>
+                <div class="nav-right"><div class="profile">Dr. John Smith</div><a href="index.html" class="logout-btn">Logout</a></div>
+            </header>
+            <div class="content-wrapper">
+                <div class="card">
+                    <h3>Enter New Diagnosis</h3>
+                    <form class="diagnosis-form">
+                        <div class="form-group"><label>Select Patient</label><select><option>Tuupoo Ndishishi (P001)</option><option>Tangi Ashipala (P002)</option></select></div>
+                        <div class="form-group"><label>Symptoms</label><div class="checkbox-group"><label><input type="checkbox">Fever</label><label><input type="checkbox">Headache</label><label><input type="checkbox">Chills</label><label><input type="checkbox">Fatigue</label></div></div>
+                        <div class="form-group"><label>Diagnosis Result</label><textarea rows="3" placeholder="e.g., Confirmed Malaria (P. falciparum)"></textarea></div>
+                        <div class="form-group"><label>Recommended Tests (Optional)</label><input type="text" placeholder="e.g., Blood Smear, RDT"></div>
+                        <button type="submit" class="btn btn-primary">Save Diagnosis</button>
+                    </form>
+                </div>
+                 <div class="card"><h3>Past Diagnoses</h3> ... </div>
+            </div>
+        </main>
+    </div>
+    <div class="chatbot">...</div>
+    <script src="js/script.js"></script>
+</body>
+</html>

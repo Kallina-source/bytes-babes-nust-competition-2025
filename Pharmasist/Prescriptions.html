@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescriptions - Pharmacist Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h3>MESMTF Pharmacy</h3></div>
+            <nav class="sidebar-nav">
+                <a href="Dashboard.html" class="nav-link">Dashboard</a>
+                <a href="Prescriptions.html" class="nav-link active">Prescriptions</a>
+                <a href="Inventory.html" class="nav-link">Inventory</a>
+                <a href="Patients.html" class="nav-link">Patients</a>
+                <a href="Reports.html" class="nav-link">Reports</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="navbar">
+                <div class="nav-left"><button class="menu-toggle" id="menu-toggle">&#9776;</button><h2>Prescriptions</h2></div>
+                <div class="nav-right"><div class="profile">Thomas Amunyela</div><a href="index.html" class="logout-btn">Logout</a></div>
+            </header>
+            <div class="content-wrapper">
+                <div class="card">
+                    <div class="table-header"><h3>Incoming Prescriptions</h3></div>
+                    <div class="table-container">
+                        <table>
+                            <thead><tr><th>Patient Name</th><th>Medicine Prescribed</th><th>Dosage</th><th>Status</th><th>Action</th></tr></thead>
+                            <tbody>
+                                <tr><td>Tuupoo Ndishishi</td><td>Coartem</td><td>20mg/120mg</td><td><span class="status pending">Pending</span></td><td><button class="btn btn-primary">Dispense</button></td></tr>
+                                <tr><td>Maria Shaanika</td><td>Paracetamol</td><td>500mg</td><td><span class="status pending">Pending</span></td><td><button class="btn btn-primary">Dispense</button></td></tr>
+                                <tr><td>John Petrus</td><td>Ciprofloxacin</td><td>500mg</td><td><span class="status dispensed">Dispensed</span></td><td>-</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="chatbot"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

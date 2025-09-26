@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments Support - MESMTF Nurse</title>
+    <link rel="stylesheet" href="nurse_css/nurse_style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h3>MESMTF NURSE</h3></div>
+            <nav class="sidebar-nav">
+                <a href="nurse_dashboard.html" class="nav-link">Dashboard</a>
+                <a href="nurse_patient_monitoring.html" class="nav-link">Patient Monitoring</a>
+                <a href="nurse_medication_administration.html" class="nav-link">Medication Administration</a>
+                <a href="nurse_appointments_support.html" class="nav-link active">Appointments Support</a>
+                <a href="index.html" class="nav-link logout">Logout</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="page-header">
+                <h1>Appointments Support</h1>
+                <p>View today's appointments and manage patient readiness.</p>
+            </header>
+            <div class="content-area">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Patient Name</th>
+                                <th>Doctor</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>14:00</td>
+                                <td>Maria Shaanika</td>
+                                <td>Dr. Ben Shaanika</td>
+                                <td><span class="status-completed">Completed</span></td>
+                                <td>-</td>
+                            </tr>
+                             <tr>
+                                <td>15:30</td>
+                                <td>David Iyambo</td>
+                                <td>Dr. Aina Ashipala</td>
+                                <td><span class="status-ready">Ready for Doctor</span></td>
+                                <td><button class="btn-secondary" disabled>Notify Doctor</button></td>
+                            </tr>
+                            <tr>
+                                <td>16:00</td>
+                                <td>Martha Kanyemba</td>
+                                <td>Dr. Aina Ashipala</td>
+                                <td><span class="status-waiting">Waiting</span></td>
+                                <td><button class="btn-primary">Confirm Arrival</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="chatbot-container">
+        <button id="chatbot-toggle-btn">Chat</button>
+        <div id="chatbot-window">
+            <div id="chatbot-header"><span>AI Assistant</span><button id="chatbot-close-btn">&times;</button></div>
+            <div id="chatbot-messages"><div class="bot-message">When a patient arrives, click 'Confirm Arrival' to update their status.</div></div>
+            <div id="chatbot-input-container">
+                <div class="typing-indicator" id="typing-indicator" style="display: none;"><span></span><span></span><span></span></div>
+                <input type="text" id="chatbot-input" placeholder="Ask a question..."><button id="chatbot-send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="nurse_js/nurse_script.js"></script>
+</body>
+</html>

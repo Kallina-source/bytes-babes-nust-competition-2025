@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Appointments - MESMTF Admin</title>
+    <link rel="stylesheet" href="admin_css/admin_style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h3>MESMTF ADMIN</h3></div>
+            <nav class="sidebar-nav">
+                <a href="admin_dashboard.html" class="nav-link">Dashboard</a>
+                <a href="admin_manage_patients.html" class="nav-link">Manage Patients</a>
+                <a href="admin_manage_doctors.html" class="nav-link">Manage Doctors</a>
+                <a href="admin_manage_nurses.html" class="nav-link">Manage Nurses</a>
+                <a href="admin_manage_pharmacists.html" class="nav-link">Manage Pharmacists</a>
+                <a href="admin_appointments.html" class="nav-link active">Appointments</a>
+                <a href="admin_reports.html" class="nav-link">Reports & Analytics</a>
+                <a href="admin_settings.html" class="nav-link">System Settings</a>
+                <a href="index.html" class="nav-link logout">Logout</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="page-header">
+                <h1>Appointments Management</h1>
+                <p>Oversee all scheduled appointments in the system.</p>
+            </header>
+            <div class="content-area">
+                <div class="content-section">
+                     <div class="toolbar">
+                        <input type="date" class="filter-bar">
+                        <input type="text" class="search-bar" placeholder="Filter by Doctor or Patient...">
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date & Time</th>
+                                    <th>Patient</th>
+                                    <th>Doctor</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2025-10-05 10:00</td>
+                                    <td>Tuupoo Ndishishi</td>
+                                    <td>Dr. Aina Ashipala</td>
+                                    <td><span class="status-confirmed">Confirmed</span></td>
+                                    <td><button class="btn-secondary">Reschedule</button> <button class="btn-danger">Cancel</button></td>
+                                </tr>
+                                 <tr>
+                                    <td>2025-09-22 14:00</td>
+                                    <td>Maria Shaanika</td>
+                                    <td>Dr. Ben Shaanika</td>
+                                    <td><span class="status-completed">Completed</span></td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="chatbot-container"> </div>
+    <script src="admin_js/admin_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #27233b;
+            color: white;
+            padding: 10px 0;
+            text-align:justify center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            color:gray;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero h2 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #27233b;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #217de6;
+        }
+        footer {
+            background-color: #333;
+            color:gray; 
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+        
+        /* Section Styles */
+        h2.section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        #about p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .testimonials {
+            background-color: #e2e2e2;
+        }
+        .testimonial-rows {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .testimonial-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+        .testimonial-card img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        .testimonial-card p {
+            font-style: italic;
+            margin: 10px 0;
+            color: #555;
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 250px;
+            text-align: center;
+        }
+        .service-card h3 {
+            color: #343245;
+            margin-top: 0;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #e2e2e2;
+        }
+        .contact-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .contact-info, .contact-form {
+            width: 100%;
+            max-width: 500px;
+        }
+        .contact-info p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 30px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .container {
+                width: 95%;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CareConnect</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to CareConnect</h2>
+            <p>Join Us in the Fight Against Malaria and Typhoid Fever</p>
+            <p>Our innovative system empowers healthcare providers and patients with the tools they need for accurate diagnosis and effective treatment. Together, we can make a difference!</p>
+            <a href="register.html" class="button">Get Started</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p>CareConnect is dedicated to leveraging technology to combat prevalent diseases like Malaria and Typhoid in our communities. Our mission is to provide an accessible, reliable, and efficient healthcare management system that connects patients with medical professionals, ensuring timely diagnosis and effective treatment for everyone.</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials From Our Users</h2>
+            <div class="testimonial-rows">
+                <div class="testimonial-card">
+                    <img src="https://via.placeholder.com/100" alt="Dr. Smith">
+                    <p>"CareConnect has revolutionized the way we diagnose and treat malaria. The AI-powered system is incredibly accurate and easy to use."<br><strong>- Dr. Smith</strong></p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://via.placeholder.com/100" alt="Jane Doe">
+                    <p>"As a patient, I feel more confident knowing that my healthcare provider is using cutting-edge technology to ensure I receive the best care possible."<br><strong>- Jane Doe</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>AI-Powered Diagnosis</h3>
+                    <p>Utilizing advanced algorithms to provide fast and accurate preliminary diagnoses for Malaria and Typhoid.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Treatment Plans</h3>
+                    <p>Generating effective, personalized treatment plans based on diagnostic results and patient history.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Health Records</h3>
+                    <p>A secure and centralized system for managing patient health records, accessible anytime, anywhere.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Patient Monitoring</h3>
+                    <p>Tools for healthcare providers to monitor patient progress and treatment adherence in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions? We'd love to hear from you. Reach out to us through any of the following methods:</p>
+                    <p><strong>Address:</strong> 123 Independence Ave, Windhoek, Namibia</p>
+                    <p><strong>Phone:</strong> +264 61 123 4567</p>
+                    <p><strong>Email:</strong> support@careconnect.com</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CareConnect. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

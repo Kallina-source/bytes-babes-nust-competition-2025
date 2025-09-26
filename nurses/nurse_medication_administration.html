@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Administration - MESMTF Nurse</title>
+    <link rel="stylesheet" href="nurse_css/nurse_style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h3>MESMTF NURSE</h3></div>
+            <nav class="sidebar-nav">
+                <a href="nurse_dashboard.html" class="nav-link">Dashboard</a>
+                <a href="nurse_patient_monitoring.html" class="nav-link">Patient Monitoring</a>
+                <a href="nurse_medication_administration.html" class="nav-link active">Medication Administration</a>
+                <a href="nurse_appointments_support.html" class="nav-link">Appointments Support</a>
+                <a href="index.html" class="nav-link logout">Logout</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="page-header">
+                <h1>Medication Administration</h1>
+                <p>Track all medication schedules for today.</p>
+            </header>
+            <div class="content-area">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Patient Name</th>
+                                <th>Medication</th>
+                                <th>Dosage</th>
+                                <th>Scheduled Time</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuupoo Ndishishi</td>
+                                <td>Coartem</td>
+                                <td>2 tablets</td>
+                                <td>20:00</td>
+                                <td><button class="btn-success" disabled>Given</button></td>
+                            </tr>
+                            <tr>
+                                <td>Maria Shaanika</td>
+                                <td>Paracetamol</td>
+                                <td>1 tablet</td>
+                                <td>21:00</td>
+                                <td><button class="btn-success">Mark as Given</button> <button class="btn-danger">Mark as Missed</button></td>
+                            </tr>
+                            <tr>
+                                <td>John Petrus</td>
+                                <td>Ciprofloxacin</td>
+                                <td>1 tablet</td>
+                                <td>21:30</td>
+                                <td><button class="btn-success">Mark as Given</button> <button class="btn-danger">Mark as Missed</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="chatbot-container">
+        <button id="chatbot-toggle-btn">Chat</button>
+        <div id="chatbot-window">
+            <div id="chatbot-header"><span>AI Assistant</span><button id="chatbot-close-btn">&times;</button></div>
+            <div id="chatbot-messages"><div class="bot-message">Ask "Which patients need meds?" to see the schedule.</div></div>
+            <div id="chatbot-input-container">
+                <div class="typing-indicator" id="typing-indicator" style="display: none;"><span></span><span></span><span></span></div>
+                <input type="text" id="chatbot-input" placeholder="Ask a question..."><button id="chatbot-send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="nurse_js/nurse_script.js"></script>
+</body>
+</html>

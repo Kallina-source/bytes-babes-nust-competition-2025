@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescriptions - Doctor Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-container">
+         <aside class="sidebar">
+            <div class="sidebar-header"><h3>MESMTF Portal</h3></div>
+            <nav class="sidebar-nav">
+                <a href="Dashboard.html" class="nav-link">Dashboard</a>
+                <a href="Appointments.html" class="nav-link">Appointments</a>
+                <a href="Patients.html" class="nav-link">Patients</a>
+                <a href="Diagnosis.html" class="nav-link">Diagnosis</a>
+                <a href="Prescriptions.html" class="nav-link active">Prescriptions</a>
+                <a href="Reports.html" class="nav-link">Reports</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="navbar">
+                <div class="nav-left"><button class="menu-toggle" id="menu-toggle">&#9776;</button><h2>Prescriptions</h2></div>
+                <div class="nav-right"><div class="profile">Dr. John Smith</div><a href="index.html" class="logout-btn">Logout</a></div>
+            </header>
+            <div class="content-wrapper">
+                <div class="card">
+                    <h3>Create New Prescription</h3>
+                    <form class="prescription-form">
+                        <div class="form-row">
+                            <div class="form-group"><label>Patient</label><select><option>Tuupoo Ndishishi (P001)</option></select></div>
+                            <div class="form-group"><label>Medicine</label><input type="text" placeholder="e.g., Coartem"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label>Dosage</label><input type="text" placeholder="e.g., 20mg/120mg"></div>
+                            <div class="form-group"><label>Frequency</label><input type="text" placeholder="e.g., 2 times a day"></div>
+                             <div class="form-group"><label>Duration</label><input type="text" placeholder="e.g., 3 days"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send to Pharmacy</button>
+                    </form>
+                </div>
+                 <div class="card"><h3>Recent Prescriptions</h3>...</div>
+            </div>
+        </main>
+    </div>
+    <div class="chatbot">...</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
